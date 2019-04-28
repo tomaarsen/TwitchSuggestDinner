@@ -55,9 +55,7 @@ class TwitchDinner:
                         out = "Recipe of most recent recommendation: " + self.recipe
                     self.ws.send_message(out)
                     logging.info(out)
-                    
-                elif m.message.startswith("!all"):
-                    logging.exception(self.data)
+
         except Exception as e:
             logging.exception(e)
     
@@ -65,7 +63,7 @@ class TwitchDinner:
         # Get raw HTML etc from website
         self.data = requests.get("http://www.whatthefuckshouldimakefordinner.com/").text
 
-        # Start and end of the recipe URL        
+        # Start and end of the recipe URL
         string_recipe_start = "<dt><a href=\""
         string_recipe_end = "\" target=\"_blank\">"
         # Start and end of the recipe name
