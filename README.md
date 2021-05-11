@@ -6,6 +6,8 @@ Twitch bot that will suggest what you should get for dinner!
 When the bot has started, it will start listening to chat messages in the channel listed in the settings.txt file. Everyone in chat can now use `!dinner` for the bot to start suggesting food. Because just the name of a food isn't particularly useful, users can also type `!recipe` to see the recipe of the previously suggested meal.<br>
 This bot uses the wonderful http://www.whatthefuckshouldimakefordinner.com for it's recommendations.
 
+---
+
 # Example
 
 The chat output when `!dinner`, `!food`, `!foodmedaddy` or `!suggest` was typed by someone:
